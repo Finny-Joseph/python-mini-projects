@@ -9,21 +9,21 @@ use_numbers = input("Include Numbers? (y/n): ")
 use_symbols = input("Include Symbols? (y/n): ")
 
 #Figure out what needs to be used
-characters = string.ascii_letters
+characters = list(string.ascii_letters)
 
 if use_numbers.lower() == "y":
-    characters += string.digits
+    characters.extend(list(string.digits))
 
 if use_symbols.lower() == "y":
-    characters += string.punctuation
-
-print("Character Pool: ",characters)
+    characters.extend(list(string.punctuation))
 
 #Generate the Password
-password = ""
+password_list = []
 
 for i in range(length):
-    password += random.choice(characters)
+    password_list.append(random.choice(characters))
+
+password = "".join(password_list)
 
 #Print the password
 print("Generated password:",password)
