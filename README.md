@@ -12,22 +12,30 @@ Features:
 - Customizable password length
 - Uses Python's random module
 
-### 2. Contact Book
+# Contact Book CLI
 
-A command-line contact management program.
+A simple command-line contact book built using Python.
 
-Features:
-- Add new contacts
-- View saved contacts
-- Search for a contact
-- Menu-based interface
+## Features
+- Add contact
+- View contacts
+- Search contact
+- Update contact
+- Delete contact
+- Save contacts using JSON
+- Load contacts automatically when the program starts
 
-Concepts used:
-- Dictionaries
+## Concepts Used
 - Functions
+- Dictionaries
 - Loops
 - Conditionals
-- User input
+- File handling
+- JSON
+
+## How to Run
+```bash
+python contact_book.py
 
 ## Technologies Used
 
